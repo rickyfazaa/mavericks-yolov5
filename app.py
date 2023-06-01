@@ -267,7 +267,7 @@ def downloadModel():
 @st.cache_resource
 def loadmodel(device):
     model = torch.hub.load('rickyfazaa/yolov5', 'custom',
-                           path=CFG_MODEL_PATH, force_reload=True, device=device)
+                           path=CFG_MODEL_PATH, force_reload=True, device=device, skip_validation=True)
     return model
 
 
