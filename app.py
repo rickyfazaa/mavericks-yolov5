@@ -50,7 +50,7 @@ st.markdown(latar, unsafe_allow_html=True)
 
 
 # Configurations
-CFG_MODEL_PATH = "/content/yolov5/best.pt"
+CFG_MODEL_PATH = "best.pt"
 CFG_ENABLE_URL_DOWNLOAD = False
 CFG_ENABLE_VIDEO_PREDICTION = True
 if CFG_ENABLE_URL_DOWNLOAD:
