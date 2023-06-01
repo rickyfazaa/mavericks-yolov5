@@ -84,7 +84,7 @@ def run(
         source = check_file(source)  # download
 
     # Directories
-    save_dir = increment_path(Path("output"), exist_ok=True)  # increment run
+    save_dir = Path("output")  # increment run
     #(save_dir / 'labels' if save_txt else save_dir).mkdir(parents=True, exist_ok=True)  # make dir
 
     # Load model
