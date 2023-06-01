@@ -48,6 +48,3 @@ wget
 ffmpeg-python
 pyngrok
 streamlit_webrtc
-libsm6 
-libxext6
-libgl1
