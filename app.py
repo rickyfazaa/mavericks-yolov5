@@ -89,7 +89,7 @@ def imageInput(model, src):
                     #im_base64 = Image.fromarray(im)
                     #im_base64.save(outputpath)
                 # subprocess.run("ls")
-                subprocess.run(['py', 'detect.py', '--weights', CFG_MODEL_PATH, '--img', '256', '--conf', '0.4', '--source', imgpath])
+                subprocess.run(['python', 'detect.py', '--weights', CFG_MODEL_PATH, '--img', '256', '--conf', '0.4', '--source', imgpath])
 
             # Predictions
             output_imgpath = os.path.join(str(ts)+image_file.name)
