@@ -1,3 +1,4 @@
+%%writefile app.py
 import streamlit as st
 import torch
 from PIL import Image
@@ -50,7 +51,7 @@ st.markdown(latar, unsafe_allow_html=True)
 
 
 # Configurations
-CFG_MODEL_PATH = "best.pt"
+CFG_MODEL_PATH = "/content/yolov5/best.pt"
 CFG_ENABLE_URL_DOWNLOAD = False
 CFG_ENABLE_VIDEO_PREDICTION = True
 if CFG_ENABLE_URL_DOWNLOAD:
@@ -251,9 +252,11 @@ Email : mvrteam11@gmail.com
         st.write("""
                  Aplikasi ini memiliki dua fungsi, yaitu
 
-                 1. Fungsi untuk mendeteksi APD (Alat Pelindung Diiri) pekerja konstruksi pada Gambar.
+                 1. Fungsi untuk mendeteksi APD (Alat Pelindung Diri) pekerja konstruksi pada Gambar.
 
-                 2. Fungsi untuk mendeteksi APD (Alat Pelindung Diiri) pekerja konstruksi pada Video. """)
+                 2. Fungsi untuk mendeteksi APD (Alat Pelindung Diri) pekerja konstruksi pada Video. 
+                 
+                 3. Fungsi untuk mendeteksi APD (Alat Pelindung Diri) pekerja konstruksi secara REAL-TIME Webcam. """)
 
 
 # Downlaod Model from url.
