@@ -49,8 +49,5 @@ streamlit_webrtc
 torch
 torchvision
 torch-geometric
--f https://data.pyg.org/whl/torch-1.13.0+cpu.html
--f data.pyg.org/whl/torch-1.13.0+cu116.html 
-torch-sparse
--f data.pyg.org/whl/torch-1.13.0+cu116.html 
-torch-scatter
+-f data.pyg.org/whl/torch-1.13.0+cu116.html torch-sparse 
+-f data.pyg.org/whl/torch-1.13.0+cu116.html torch-scatter
