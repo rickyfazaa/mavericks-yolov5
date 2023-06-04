@@ -29,6 +29,10 @@ import os
 import sys
 from pathlib import Path
 
+
+import torch
+import torch.backends.cudnn as cudnn
+
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[0]  # YOLOv5 root directory
 if str(ROOT) not in sys.path:
