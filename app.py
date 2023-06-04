@@ -72,7 +72,7 @@ def imageInput(model, src):
                          use_column_width='always') # use_column_width='always' width=256
             ts = datetime.timestamp(datetime.now())
             imgpath = os.path.join('input', str(ts)+image_file.name)
-            outputpath = os.path.join(os.path.basename(imgpath))
+            outputpath = os.path.join("output")
             with open(imgpath, mode="wb") as f:
                 f.write(image_file.getbuffer())
 
@@ -92,7 +92,7 @@ def imageInput(model, src):
                 subprocess.run(['python3', 'detect.py', '--weights', CFG_MODEL_PATH, '--img', '256', '--conf', '0.4', '--source', imgpath])
 
             # Predictions
-            output_imgpath = os.path.join(str(ts)+image_file.name)
+            output_imgpath = os.path.join("output")
             img_ = Image.open(output_imgpath)
             with col2:
                 st.image(img_, caption='Model Prediction(s)',
